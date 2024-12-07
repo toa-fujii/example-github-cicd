@@ -2,6 +2,6 @@ name: YAML error
 on: push
 jobs:
   run:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
       steps:                          # インデントが2文字ズレている！
       - run: echo "YAML Syntax Error"

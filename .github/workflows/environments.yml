@@ -9,7 +9,7 @@ on:
         description: Environment name
 jobs:
   print:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     environment: ${{ inputs.environment-name }} # 利用するEnvironmentsを指定
     env:
       USERNAME: ${{ vars.USERNAME }}            # Environment variablesの参照

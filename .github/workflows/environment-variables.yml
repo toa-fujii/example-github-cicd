@@ -2,7 +2,7 @@ name: Environment variables
 on: push
 jobs:
   run:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     env:
       BRANCH: main                # ジョブレベルで環境変数を定義
     steps:

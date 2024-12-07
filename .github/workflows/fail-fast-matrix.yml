@@ -2,7 +2,7 @@ name: Fail-fast matrix
 on: push
 jobs:
   run:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     strategy:
       fail-fast: false     # マトリックスのフェイルファストを無効化する
       matrix:

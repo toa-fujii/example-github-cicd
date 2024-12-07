@@ -3,6 +3,6 @@ on: push
 concurrency: ${{ github.workflow }} # Concurrencyグループへワークフロー名を指定
 jobs:
   sleep:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - run: sleep 120

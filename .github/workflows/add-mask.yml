@@ -2,7 +2,7 @@ name: Add mask
 on: push
 jobs:
   log:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     env:
       PASSWORD: SuperSecretValue
     steps:

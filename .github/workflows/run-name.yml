@@ -3,6 +3,6 @@ run-name: Run by @${{ github.actor }} # ワークフロー実行名の指定
 on: push
 jobs:
   print:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - run: echo "Hello"

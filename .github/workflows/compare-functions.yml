@@ -2,7 +2,7 @@ name: Compare functions
 on: push
 jobs:
   compare:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - run: printenv | grep '_FUNC'
         env:

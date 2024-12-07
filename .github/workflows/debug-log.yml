@@ -2,6 +2,6 @@ name: Debug log
 on: push
 jobs:
   log:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - run: echo "::debug::This is a debug log" # デバッグログ有効化時にのみ出力

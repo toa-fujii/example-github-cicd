@@ -10,7 +10,7 @@ env:
   IMAGE_NAME: gha-image                   # コンテナイメージ名
 jobs:
   publish:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     permissions:
       packages: write                     # GitHub Packagesへの書き込みを許可
       contents: read                      # ソースコードのチェックアウトを許可

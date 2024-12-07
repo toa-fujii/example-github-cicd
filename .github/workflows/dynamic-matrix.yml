@@ -2,7 +2,7 @@ name: Dynamic matrix
 on: push
 jobs:
   prepare:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - id: dynamic
         run: | # マトリックス定義をJSON文字列で記述

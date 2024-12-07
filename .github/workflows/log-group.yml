@@ -2,7 +2,7 @@ name: Log group
 on: push
 jobs:
   log:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - run: |
           echo "::group::Show environment variables" # ロググループ化の開始

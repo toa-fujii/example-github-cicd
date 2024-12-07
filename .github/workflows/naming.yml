@@ -3,7 +3,7 @@ on: push
 jobs:
   print:
     name: Super Useful Job   # ジョブ名の指定
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: Amazing Script # ステップ名の指定
         run: echo "Hello"

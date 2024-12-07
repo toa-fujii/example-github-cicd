@@ -2,7 +2,7 @@ name: Change shell
 on: push
 jobs:
   print:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - shell: bash          # シェルにBashを指定
         run: echo "${SHELL}"

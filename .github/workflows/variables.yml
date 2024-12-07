@@ -2,7 +2,7 @@ name: Variables
 on: push
 jobs:
   print:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     env:
       USERNAME: ${{ vars.USERNAME }} # Variablesの参照
     steps:

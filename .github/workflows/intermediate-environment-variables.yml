@@ -2,7 +2,7 @@ name: Intermediate environment variables
 on: push
 jobs:
   print:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     env:
       ACTOR: ${{ github.actor }} # コンテキストの値を環境変数へセット
     steps:

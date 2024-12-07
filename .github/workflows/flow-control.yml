@@ -2,7 +2,7 @@ name: Flow control
 on: push
 jobs:
   run:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - run: exit "$(( RANDOM % 2 ))"
       - run: exit 1

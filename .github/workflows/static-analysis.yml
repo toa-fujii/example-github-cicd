@@ -10,7 +10,7 @@ concurrency:                                      # 自動キャンセル
   cancel-in-progress: true
 jobs:
   lint:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     timeout-minutes: 5                            # タイムアウト
     steps:
       - uses: actions/checkout@v4

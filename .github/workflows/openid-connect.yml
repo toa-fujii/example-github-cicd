@@ -5,7 +5,7 @@ env: # AWSの認証アクションへ指定する入力パラメータを環境�
   SESSION_NAME: gh-oidc-${{ github.run_id }}-${{ github.run_attempt }}
 jobs:
   connect:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     permissions:
       id-token: write                                  # OIDCトークンの取得を許可
     steps:

@@ -2,7 +2,7 @@ name: Conftest
 on: pull_request
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - uses: actions/checkout@v4
       - run: | # ポリシーファイルのパスを指定し、Conftestでワークフローファイルを検証

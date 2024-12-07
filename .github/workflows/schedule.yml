@@ -4,6 +4,6 @@ on:
     - cron: '*/15 * * * *' # 15分ごとに起動するcron式
 jobs:
   run:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - run: date

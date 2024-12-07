@@ -2,7 +2,7 @@ name: Literals
 on: push
 jobs:
   print:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - run: printenv | grep 'LITERAL_'
         env:

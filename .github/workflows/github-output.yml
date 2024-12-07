@@ -2,7 +2,7 @@ name: GITHUB_OUTPUT
 on: push
 jobs:
   share:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - id: source                                     # ステップIDを設定
         run: echo "result=Hello" >> "${GITHUB_OUTPUT}" # GITHUB_OUTPUTへ書き出し

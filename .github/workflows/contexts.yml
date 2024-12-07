@@ -2,6 +2,6 @@ name: Contexts
 on: push
 jobs:
   print:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - run: echo "${{ github.actor }}" # githubコンテキストの参照

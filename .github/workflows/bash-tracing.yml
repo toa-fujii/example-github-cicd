@@ -2,7 +2,7 @@ name: Bash tracing
 on: push
 jobs:
   log:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - run: |   # Bashのトレーシングオプションを有効化し、実行したコマンドをログ出力
           set -x

@@ -9,7 +9,7 @@ on:
         description: Bump to patch or minor or major
 jobs:
   release:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     permissions:
       contents: write
     steps:
