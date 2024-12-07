@@ -9,6 +9,6 @@ on:
         description: A cheerful word       # 入力パラメータの概要
 jobs:
   run:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - run: echo "${{ inputs.greeting }}" # 入力パラメータ「greeting」の参照
